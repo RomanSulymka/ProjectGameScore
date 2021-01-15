@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity">
+
+
+    <TextView
+        android:id="@+id/tvSecondTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Team"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tvFirstTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="First Team"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvScoreFirstTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80sp"
+        android:padding="40dp"
+        android:layout_below="@+id/tvFirstTeam"
+        android:layout_marginStart="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvScoreSecondTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80sp"
+        android:padding="40dp"
+        android:layout_below="@+id/tvSecondTeam"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btn_first_team"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvScoreFirstTeam"
+        android:layout_marginStart="23dp"
+        android:gravity="center"
+        android:text="Goooool"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/btn_second_team"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_below="@+id/tvScoreSecondTeam"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="242dp"
+        android:gravity="center"
+        android:text="Goooool"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cancel"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_go_to_list_of_winners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Winners list"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
