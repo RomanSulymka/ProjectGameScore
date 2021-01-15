@@ -13,8 +13,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:errorEnabled="true"
-    >
+        app:errorEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_firstTeam"
@@ -35,21 +34,30 @@
         android:layout_height="wrap_content"
         app:errorEnabled="true">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/et_secondTeam"
-        android:hint="enter second team"
-        android:imeOptions="actionGo"
-        android:inputType="text"
-        android:singleLine="true"
-        android:maxLength="20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_secondTeam"
+            android:hint="enter second team"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_addTeams"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add teams"/>
+
+    <Button
+        android:id="@+id/btn_goToGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go play"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
