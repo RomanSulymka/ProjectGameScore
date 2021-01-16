@@ -37,7 +37,7 @@
         android:textSize="80sp"
         android:padding="40dp"
         android:layout_below="@+id/tvFirstTeam"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:gravity="center"/>
 
     <TextView
@@ -48,7 +48,7 @@
         android:textSize="80sp"
         android:padding="40dp"
         android:layout_below="@+id/tvSecondTeam"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
         android:gravity="center"
         android:layout_alignParentEnd="true"/>
 
@@ -60,7 +60,7 @@
         android:layout_below="@+id/tvScoreFirstTeam"
         android:layout_marginStart="23dp"
         android:gravity="center"
-        android:text="Goooool"
+        android:text="Goooaal"
         android:textSize="22sp"/>
 
     <Button
@@ -71,24 +71,71 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="242dp"
         android:gravity="center"
-        android:text="Goooool"
+        android:text="Goooaal"
         android:textSize="22sp"/>
 
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Timer"
+        android:textColor="#673AB7"
+        android:layout_marginTop="160dp"
+        android:textSize="22sp"/>
+
+
+    <TextView
+        android:id="@+id/tvGameControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game control"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/btn_first_team"
+        android:layout_marginTop="20dp"
+        />
+
+
     <Button
-        android:id="@+id/btn_cancel"
+        android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="Cancel"
-        android:layout_centerHorizontal="true"/>
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/tvGameControl"
+        android:layout_marginLeft="20dp"
+        />
 
     <Button
         android:id="@+id/btn_go_to_list_of_winners"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_below="@+id/tvGameControl"
         android:text="Winners list"
-        android:layout_alignParentBottom="true"/>
+        android:layout_toRightOf="@+id/btnCancel"
+        android:layout_marginLeft="20dp"
+        />
 
+    <Button
+        android:id="@+id/btnToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="main"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/tvGameControl"
+        android:layout_toRightOf="@+id/btn_go_to_list_of_winners"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTestRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        />
 
 </RelativeLayout>
